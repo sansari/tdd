@@ -5,7 +5,7 @@ Tdd::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'shows#index'
 
-  resources :shows, :only => [:index]
+  resources :shows, :only => [:index, :new, :create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

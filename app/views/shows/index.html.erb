@@ -1,1 +1,23 @@
 <h1>Shows List</h1>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>Show Name</th>
+      <th>Show Picture URL</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shows.each do |show| %>
+      <tr>
+        <td><%=show.name%></td>
+        <td><%=show.picture%></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<a href="/shows/new">New Show</a>

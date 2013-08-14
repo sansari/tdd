@@ -1,0 +1,11 @@
+<h1>New Show</h1>
+
+<div id="form-wrapper">
+  <%= simple_form_for @show do |f| %>
+    <fieldset>
+      <%=f.input :name %>
+      <%=f.input :picture %>
+      <%=f.button :submit, "Submit" %>
+    </fieldset>
+  <% end %>
+</div>

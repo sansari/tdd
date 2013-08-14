@@ -27,13 +27,19 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'simple_form'
+
+gem 'zurb-foundation'
+
 group :development, :test do
+  gem 'shoulda'
+  gem 'jazz_hands'
   gem 'rspec-rails'
 end
 
 group :test do
   gem 'capybara'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'database_cleaner', '1.0.1'
   gem 'selenium-webdriver'
 end
